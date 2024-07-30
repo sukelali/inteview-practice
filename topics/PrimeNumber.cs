@@ -12,13 +12,22 @@ namespace interview_practice.topics
         public static string PrimeOrNotPrime(int number)
         {
 
+            // 21  , , , ,, ,, ,,,11,,13,,15,, 17,, 19,, 21
+
+            if (number % 2 == 0)
+            {
+                return "Not Prime";
+            }
+
             bool isPrime = true;
 
-            for(int i = 2; i < number; i++)
+            for(int i = 3; i <= Math.Floor(Math.Sqrt(number)); i = i + 2)
             {
-                if(number % i == 0)
+                //Console.WriteLine($"{i} \n");
+
+                if (number % i == 0)
                 {
-                    isPrime =false; 
+                    isPrime =false;
                     break;
                 }
             }
