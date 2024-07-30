@@ -43,5 +43,22 @@ namespace interview_practice.topics
             return occuranceString.ToString();
 
         }
+
+
+        public static string RemoveDuplicate(string str)
+        {
+            var stringBuilder = new StringBuilder();
+
+            for(int i = 0; i < str.Length; i++)
+            {
+                if (!stringBuilder.ToString().Contains(str[i]))
+                {
+                    stringBuilder.Append(str[i]);
+                }
+
+            }
+
+            return stringBuilder.ToString();
+        }
     }
 }

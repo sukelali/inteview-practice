@@ -20,8 +20,10 @@ while (true)
 
     //var reverseSentenceWord = SentenceReverse.ReverseWord(str);
 
-   var occuranceString = StringOccurance.CountOccurance(str);
+    //var occuranceString = StringOccurance.CountOccurance(str);
 
-   Console.WriteLine($"New String : {occuranceString}");
+    var removeDuplicateString = StringOccurance.RemoveDuplicate(str);
+
+   Console.WriteLine($"New String : {removeDuplicateString}");
 
 }
