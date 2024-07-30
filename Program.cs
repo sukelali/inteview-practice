@@ -22,8 +22,10 @@ while (true)
 
     //var occuranceString = StringOccurance.CountOccurance(str);
 
-    var removeDuplicateString = StringOccurance.RemoveDuplicate(str);
+    //var removeDuplicateString = StringOccurance.RemoveDuplicate(str);
 
-   Console.WriteLine($"New String : {removeDuplicateString}");
+    var subString = SubString.Create(str);
+
+   Console.WriteLine($"New String : {subString}");
 
 }
