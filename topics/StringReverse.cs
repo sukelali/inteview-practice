@@ -12,14 +12,13 @@ namespace interview_practice.topics
 
         public static string reverse(string str) {
 
-            char[] strChar = str.ToCharArray();
 
             StringBuilder newString = new StringBuilder();
 
-            for(int i = 0, j = strChar.Length - 1 ; i < strChar.Length; i++, j--)
+            for(int i = 0, j = str.Length - 1 ; i < str.Length; i++, j--)
             {
 
-                newString.Append(strChar[j]);
+                newString.Append(str[j]);
             }
 
             return newString.ToString();    
