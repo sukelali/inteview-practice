@@ -10,7 +10,7 @@ namespace interview_practice.topics
     {
 
 
-        public static string reverse(string str) {
+        public static string Reverse(string str) {
 
 
             StringBuilder newString = new StringBuilder();

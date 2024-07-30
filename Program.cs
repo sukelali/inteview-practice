@@ -11,9 +11,11 @@ while(true)
 
     var str =  Console.ReadLine();
 
-    var reverseString = StringReverse.reverse(str); 
+    //var reverseString = StringReverse.Reverse(str); 
 
-    Console.WriteLine($"Reverse String : { reverseString }");
+    var palindrome = StringPalindrome.IsPalindrome(str);
+
+    Console.WriteLine($"Palindrome String : { palindrome }");
 
 
 }
