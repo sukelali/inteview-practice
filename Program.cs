@@ -1,9 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using interview_practice.topics;
+using System.Text;
 
 
 
-while(true)
+while (true)
 {
 
 
@@ -15,9 +16,12 @@ while(true)
 
     //var palindrome = StringPalindrome.IsPalindrome(str);
 
-    var reverseSentence = SentenceReverse.ReverseWord(str);
+    //var reverseSentence = SentenceReverse.Reverse(str);
 
-    Console.WriteLine($"New String : { reverseSentence }");
+    //var reverseSentenceWord = SentenceReverse.ReverseWord(str);
 
+   var occuranceString = StringOccurance.CountOccurance(str);
+
+   Console.WriteLine($"New String : {occuranceString}");
 
 }
