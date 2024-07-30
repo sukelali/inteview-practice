@@ -15,7 +15,7 @@ while(true)
 
     //var palindrome = StringPalindrome.IsPalindrome(str);
 
-    var reverseSentence = SentenceReverse.Reverse(str);
+    var reverseSentence = SentenceReverse.ReverseWord(str);
 
     Console.WriteLine($"New String : { reverseSentence }");
 
