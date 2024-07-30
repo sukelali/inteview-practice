@@ -24,8 +24,21 @@ while (true)
 
     //var removeDuplicateString = StringOccurance.RemoveDuplicate(str);
 
-    var subString = SubString.Create(str);
+    //var subString = SubString.Create(str);
 
-   Console.WriteLine($"New String : {subString}");
+
+    //int[] numbers = str.Split(",").Select(n => Int32.Parse(n.Trim())).ToArray();
+
+    //var newNumber = LeftCircularArray.ShiftLeft(numbers);
+
+    //string newStr = string.Join(",", newNumber);
+        
+
+    int number = Int32.Parse(str);
+
+    string primeOrNot = PrimeNumber.PrimeOrNotPrime(number);
+
+
+   Console.WriteLine($"New String :  {primeOrNot}");
 
 }
