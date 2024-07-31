@@ -13,8 +13,8 @@ namespace interview_practice.topics
 
             // 3 2 1 5 4 => 4
 
-            int firstMax = 0;
-            int secondMax = 0;
+            int firstMax = int.MinValue;
+            int secondMax = int.MinValue;
 
             for(int i = 0; i < numbers.Length; i++)
             {
@@ -45,13 +45,12 @@ namespace interview_practice.topics
 
             // 3 2 1 5 4 => 4
 
-            int firstMax = 0;
-            int secondMax = 0;
-            int thirdMax = 0;
+            long firstMax = long.MinValue;
+            long secondMax = long.MinValue;
+            long thirdMax = long.MinValue;
 
             for (int i = 0; i < numbers.Length; i++)
             {
-
 
                 if (numbers[i] > firstMax)
                 {
@@ -74,8 +73,70 @@ namespace interview_practice.topics
                 }
             }
 
+           
+            if(thirdMax == long.MinValue)
+            {
+                thirdMax = firstMax;
+            }
 
-            return thirdMax;
+
+            return Convert.ToInt32(thirdMax) ;
         }
+
+
+        public static int GetNThLargest(int[] numbers, int l)
+        {
+
+            // 3 2 1 5 4 => 4
+
+            //PriorityQueue<int, int> numberPriority = new PriorityQueue<int, int>();
+
+            var sortedQueque = new SortedSet<(int value, int index)>();
+
+
+            for(int i = 0; i < numbers.Length; i++)
+            {
+
+              if(sortedQueque.Count < l)
+              {
+                  sortedQueque.Add((numbers[i], i));
+              }
+                else if (numbers[i] > sortedQueque.Min.value)
+                {
+                    sortedQueque.Remove(sortedQueque.Min);
+                    sortedQueque.Add((numbers[i], i));
+
+                }
+
+            }
+
+
+            return sortedQueque.Min.value;
+        }
+
+
+        public static string KthLargestNumber(string[] nums, int k)
+        {
+            var maxHeap = new SortedSet<(int value, int index)>();
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int number = Convert.ToInt32(nums[i]);
+
+                if (maxHeap.Count < k)
+                {
+                    maxHeap.Add((number, i));
+                }
+                else if (number > maxHeap.Min.value)
+                {
+                    maxHeap.Remove(maxHeap.Min);
+                    maxHeap.Add((number, i));
+                }
+
+            }
+
+            return maxHeap.Min.value.ToString();
+        }
+
     }
 }

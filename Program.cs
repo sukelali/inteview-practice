@@ -41,9 +41,11 @@ while (true)
     int[] numbers = str.Split(",").Select(n => Int32.Parse(n.Trim())).ToArray();
 
     //var secondLargest = LargestInteger.GetSecondLargest(numbers);
-    var thirdLargest = LargestInteger.GetThirdLargest(numbers);
 
+    //var thirdLargest = LargestInteger.GetThirdLargest(numbers);
 
-    Console.WriteLine($"New String :  {thirdLargest}");
+    var nthLargest = LargestInteger.GetNThLargest(numbers, 3);
+
+    Console.WriteLine($"New String :  {nthLargest}");
 
 }
