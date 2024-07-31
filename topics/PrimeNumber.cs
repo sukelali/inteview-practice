@@ -12,8 +12,6 @@ namespace interview_practice.topics
         public static string PrimeOrNotPrime(int number)
         {
 
-            // 21  , , , ,, ,, ,,,11,,13,,15,, 17,, 19,, 21
-
             if (number % 2 == 0)
             {
                 return "Not Prime";

@@ -32,13 +32,17 @@ while (true)
     //var newNumber = LeftCircularArray.ShiftLeft(numbers);
 
     //string newStr = string.Join(",", newNumber);
-        
-
-    int number = Int32.Parse(str);
-
-    string primeOrNot = PrimeNumber.PrimeOrNotPrime(number);
 
 
-   Console.WriteLine($"New String :  {primeOrNot}");
+    //int number = Int32.Parse(str);
+
+    //string primeOrNot = PrimeNumber.PrimeOrNotPrime(number);
+
+    int[] numbers = str.Split(",").Select(n => Int32.Parse(n.Trim())).ToArray();
+
+    var secondLargest = LargestInteger.GetSecondLargest(numbers);
+
+
+    Console.WriteLine($"New String :  {secondLargest}");
 
 }
