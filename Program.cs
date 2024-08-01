@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using interview_practice.topics;
+using interview_practice.topics.Dotnet;
 using System.Text;
 
 
@@ -38,14 +39,20 @@ while (true)
 
     //string primeOrNot = PrimeNumber.PrimeOrNotPrime(number);
 
-    int[] numbers = str.Split(",").Select(n => Int32.Parse(n.Trim())).ToArray();
+    //int[] numbers = str.Split(",").Select(n => Int32.Parse(n.Trim())).ToArray();
 
     //var secondLargest = LargestInteger.GetSecondLargest(numbers);
 
     //var thirdLargest = LargestInteger.GetThirdLargest(numbers);
 
-    var nthLargest = LargestInteger.GetNThLargest(numbers, 3);
+    //var nthLargest = LargestInteger.GetNThLargest(numbers, 3);
 
-    Console.WriteLine($"New String :  {nthLargest}");
+
+    var filterStudentName = LinqFilterAndSorter.GetFilterStudents();
+
+    var names = string.Join(",", filterStudentName);
+
+
+    Console.WriteLine($"New String :  {names}");
 
 }
