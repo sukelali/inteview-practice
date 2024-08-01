@@ -57,7 +57,10 @@ while (true)
 
     //Console.WriteLine($"New String :  {sum}");
 
-    var singletonOne = Singleton.GetInstance();
-    var singletonTwo = Singleton.GetInstance();
+    //var singletonOne = Singleton.GetInstance();
+    //var singletonTwo = Singleton.GetInstance();
+
+
+   await  FileReader.DownloadFileAsync();
 
 }
