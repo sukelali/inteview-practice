@@ -48,11 +48,13 @@ while (true)
     //var nthLargest = LargestInteger.GetNThLargest(numbers, 3);
 
 
-    var filterStudentName = LinqFilterAndSorter.GetFilterStudents();
+    //var filterStudentName = LinqFilterAndSorter.GetFilterStudents();
 
-    var names = string.Join(",", filterStudentName);
+    //var names = string.Join(",", filterStudentName);
+
+    int sum = FileReader.ReadFileAndSumNumber();
 
 
-    Console.WriteLine($"New String :  {names}");
+    Console.WriteLine($"New String :  {sum}");
 
 }
