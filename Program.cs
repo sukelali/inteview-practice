@@ -52,9 +52,12 @@ while (true)
 
     //var names = string.Join(",", filterStudentName);
 
-    int sum = FileReader.ReadFileAndSumNumber();
+    ////int sum = FileReader.ReadFileAndSumNumber();
 
 
-    Console.WriteLine($"New String :  {sum}");
+    //Console.WriteLine($"New String :  {sum}");
+
+    var singletonOne = Singleton.GetInstance();
+    var singletonTwo = Singleton.GetInstance();
 
 }
