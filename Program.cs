@@ -61,6 +61,20 @@ while (true)
     //var singletonTwo = Singleton.GetInstance();
 
 
-   await  FileReader.DownloadFileAsync();
+    //await  FileReader.DownloadFileAsync();
+
+    var calculator = new Calculator();
+
+    var sum = new CalculatorDelegate(calculator.Add);
+    var divide = new CalculatorDelegate(calculator.Divide);
+    var multiply = new CalculatorDelegate(calculator.Multiply);
+
+
+    sum(11, 12);
+    divide(100, 10);
+    multiply(10,12);
 
 }
+
+
+public delegate void CalculatorDelegate(int a, int b);
