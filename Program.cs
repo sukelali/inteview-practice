@@ -63,21 +63,33 @@ while (true)
 
     //await  FileReader.DownloadFileAsync();
 
-    var calculator = new Calculator();
+    //var calculator = new Calculator();
 
-    CalculatorDelegate sum = delegate(int a, int b) {
-        Console.WriteLine($"sum of {a}, {b} is: { a + b }");
-    };
+    //CalculatorDelegate sum = delegate(int a, int b) {
+    //    Console.WriteLine($"sum of {a}, {b} is: { a + b }");
+    //};
 
-    var divide = new CalculatorDelegate(calculator.Divide);
-    var multiply = new CalculatorDelegate(calculator.Multiply);
+    //var divide = new CalculatorDelegate(calculator.Divide);
+    //var multiply = new CalculatorDelegate(calculator.Multiply);
 
 
-    sum(11, 12);
-    divide(100, 10);
-    multiply(10,12);
+    //sum(11, 12);
+    //divide(100, 10);
+    //multiply(10,12);
+
+    CalculatorDelegateLamda sum = (a, b) => a + b;
+    CalculatorDelegateLamda divide = (a, b) => a / b;
+    CalculatorDelegateLamda multiply = (a, b) => a * b;
+
+    Console.WriteLine($"Sum: {sum(11,29)}" );
+
+    Console.WriteLine($"Divide : {divide(5, 10)}");
+
+    Console.WriteLine($"multiply : {multiply(5, 10)}");
 
 }
 
 
 public delegate void CalculatorDelegate(int a, int b);
+
+public delegate int CalculatorDelegateLamda(int a, int b);
