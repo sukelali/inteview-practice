@@ -77,19 +77,25 @@ while (true)
     //divide(100, 10);
     //multiply(10,12);
 
-    CalculatorDelegateLamda sum = (a, b) => a + b;
-    CalculatorDelegateLamda divide = (a, b) => a / b;
-    CalculatorDelegateLamda multiply = (a, b) => a * b;
+    //CalculatorDelegateLamda sum = (a, b) => a + b;
+    //CalculatorDelegateLamda divide = (a, b) => a / b;
+    //CalculatorDelegateLamda multiply = (a, b) => a * b;
 
-    Console.WriteLine($"Sum: {sum(11,29)}" );
 
-    Console.WriteLine($"Divide : {divide(5, 10)}");
+    //Console.WriteLine($"Sum: {sum(11,29)}" );
 
-    Console.WriteLine($"multiply : {multiply(5, 10)}");
+    //Console.WriteLine($"Divide : {divide(5, 10)}");
+
+    //Console.WriteLine($"multiply : {multiply(5, 10)}");
+
+    
+    var calculator = new Calculator();
+
+    Console.WriteLine($"{calculator.CalculateRadius(r => Math.PI * 2 * 2)}");
 
 }
 
 
-public delegate void CalculatorDelegate(int a, int b);
+//public delegate void CalculatorDelegate(int a, int b);
 
-public delegate int CalculatorDelegateLamda(int a, int b);
+//public delegate int CalculatorDelegateLamda(int a, int b);

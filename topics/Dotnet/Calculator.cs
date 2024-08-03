@@ -29,5 +29,9 @@ namespace interview_practice.topics.Dotnet
         }
 
 
+        public double CalculateRadius(Func<double, double> op)
+        {
+            return op(2);
+        }
     }
 }
