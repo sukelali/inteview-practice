@@ -65,7 +65,10 @@ while (true)
 
     var calculator = new Calculator();
 
-    var sum = new CalculatorDelegate(calculator.Add);
+    CalculatorDelegate sum = delegate(int a, int b) {
+        Console.WriteLine($"sum of {a}, {b} is: { a + b }");
+    };
+
     var divide = new CalculatorDelegate(calculator.Divide);
     var multiply = new CalculatorDelegate(calculator.Multiply);
 
