@@ -88,10 +88,18 @@ while (true)
 
     //Console.WriteLine($"multiply : {multiply(5, 10)}");
 
-    
-    var calculator = new Calculator();
 
-    Console.WriteLine($"{calculator.CalculateRadius(r => Math.PI * 2 * 2)}");
+    //var calculator = new Calculator();
+
+    //Console.WriteLine($"{calculator.CalculateRadius(r => Math.PI * 2 * 2)}");
+
+    Int32.TryParse(str, out int number);
+
+    //IEnumerable<int> primeNumbers = PrimeNumber.GetPrimeNumbers(number);
+
+    //string numberString =  string.Join(",", primeNumbers);
+
+    Console.WriteLine(PrimeNumber.PrimeNumberCountUsingSieve(number));
 
 }
 

@@ -97,16 +97,16 @@ namespace interview_practice.topics
             for(int i = 0; i < numbers.Length; i++)
             {
 
-              if(sortedQueque.Count < l)
-              {
-                  sortedQueque.Add((numbers[i], i));
-              }
+                if(sortedQueque.Count < l)
+                {
+                    sortedQueque.Add((numbers[i], i));
+                }
                 else if (numbers[i] > sortedQueque.Min.value)
                 {
                     sortedQueque.Remove(sortedQueque.Min);
                     sortedQueque.Add((numbers[i], i));
 
-                }
+            }
 
             }
 
