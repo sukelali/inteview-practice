@@ -9,11 +9,9 @@ namespace interview_practice.topics.StringOperation
     public static class StringReverse
     {
 
-
         public static string Reverse(string str)
         {
             if(str == null) throw new ArgumentNullException("str");
-
 
             StringBuilder newString = new StringBuilder();
 
