@@ -36,5 +36,17 @@ namespace interview_practice.topics.StringOperation
             return newString.ToString();
 
         }
+
+
+        public static void TakeInputAndGenerateSubString()
+        {
+            Console.WriteLine("Enter Your String: ");
+
+            string inputString = Console.ReadLine();
+
+            string subString = Create(inputString);
+
+            Console.WriteLine(subString);
+        }
     }
 }
