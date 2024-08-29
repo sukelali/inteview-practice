@@ -8,3 +8,8 @@ using System.Text;
 Console.WriteLine("Interview");
 
 
+//DuplicateRemove.TakeInputAndRemoveDuplicate();
+
+StringOccurance.TakeInputAndCountOccurance();
+
+
