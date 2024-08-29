@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace interview_practice.topics
+namespace interview_practice.topics.StringOperation
 {
     public static class StringOccurance
     {
@@ -21,7 +21,7 @@ namespace interview_practice.topics
                     if (!stringDict.ContainsKey(str[i]))
                     {
                         stringDict[str[i]] = 1;
-                    } 
+                    }
                     else
                     {
                         stringDict[str[i]]++;
@@ -33,9 +33,9 @@ namespace interview_practice.topics
             //return stringDict;
 
             var occuranceString = new StringBuilder();
-                occuranceString.Append("\n");
+            occuranceString.Append("\n");
 
-            foreach ( var strD in stringDict )
+            foreach (var strD in stringDict)
             {
                 occuranceString.Append($"{strD.Key}: {strD.Value} \n");
             }
@@ -49,7 +49,7 @@ namespace interview_practice.topics
         {
             var stringBuilder = new StringBuilder();
 
-            for(int i = 0; i < str.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
                 if (!stringBuilder.ToString().Contains(str[i]))
                 {

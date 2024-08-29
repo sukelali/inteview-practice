@@ -1,17 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using interview_practice.topics;
 using interview_practice.topics.Dotnet;
+using interview_practice.topics.StringOperation;
 using System.Text;
 
 
 
-while (true)
-{
 
+    //Console.WriteLine("Enter Input: ");
 
-    Console.WriteLine("Enter Input: ");
-
-    var str =  Console.ReadLine();
+    //var str =  Console.ReadLine();
 
     //var reverseString = StringReverse.Reverse(str); 
 
@@ -93,15 +91,27 @@ while (true)
 
     //Console.WriteLine($"{calculator.CalculateRadius(r => Math.PI * 2 * 2)}");
 
-    Int32.TryParse(str, out int number);
+    //Int32.TryParse(str, out int number);
 
     //IEnumerable<int> primeNumbers = PrimeNumber.GetPrimeNumbers(number);
 
     //string numberString =  string.Join(",", primeNumbers);
 
-    Console.WriteLine(PrimeNumber.PrimeNumberCountUsingSieve(number));
+    //Console.WriteLine(PrimeNumber.PrimeNumberCountUsingSieve(number));
 
-}
+
+    //var arrNames =  LinqFilterAndSorter.GetFilterStudentsByCustom();
+
+    //var stringNames = string.Join(",", arrNames);
+
+    //Student s = new Student() { Id = 1, GPA = 3, Name= "Sukel Ali" };
+
+    //var name =  s.GetNameString();
+
+    //Console.WriteLine(name);
+
+
+StringReverse.TakeInputAndReverse();
 
 
 //public delegate void CalculatorDelegate(int a, int b);

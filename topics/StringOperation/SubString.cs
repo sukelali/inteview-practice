@@ -1,11 +1,9 @@
 ﻿using System.Text;
 
-namespace interview_practice.topics
+namespace interview_practice.topics.StringOperation
 {
     public static class SubString
     {
-
-
 
         public static string Create(string str)
         {
@@ -13,7 +11,7 @@ namespace interview_practice.topics
             var newString = new StringBuilder();
 
             // abcd  a ab abc abcd b bc bcd c cd d 
-            for(int i = 0; i < str.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
                 // i = 1
                 //newString.Append(str[i]);
@@ -21,12 +19,12 @@ namespace interview_practice.topics
                 {
                     // j = 1
 
-                    for(int k = j; k <= i; k++)
+                    for (int k = j; k <= i; k++)
                     {
                         newString.Append(str[k]);
                     }
 
-                    newString.Append(" "); 
+                    newString.Append(" ");
 
                     //newString.Append(str[j]);
 

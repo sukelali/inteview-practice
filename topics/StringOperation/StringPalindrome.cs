@@ -1,6 +1,4 @@
-﻿
-
-namespace interview_practice.topics
+﻿namespace interview_practice.topics.StringOperation
 {
     public static class StringPalindrome
     {
@@ -11,7 +9,7 @@ namespace interview_practice.topics
             // madam == palindrome
             // book is not palindroe
             var isPalindrome = true;
-            for(int i = 0, j = str.Length-1; i <= j; i++, j--)
+            for (int i = 0, j = str.Length - 1; i <= j; i++, j--)
             {
                 if (str[i] != str[j])
                 {
@@ -21,7 +19,7 @@ namespace interview_practice.topics
                 }
             }
 
-            return isPalindrome ? "palindrome" : "not palindrom";  
+            return isPalindrome ? "palindrome" : "not palindrom";
         }
     }
 }

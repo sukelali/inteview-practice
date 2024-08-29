@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace interview_practice.topics
+namespace interview_practice.topics.StringOperation
 {
     public static class SentenceReverse
     {
@@ -17,7 +17,7 @@ namespace interview_practice.topics
 
             StringBuilder reverseSentence = new StringBuilder();
 
-            for(int i = 0, j = sentenceArray.Length-1;  i < sentenceArray.Length; i++, j--)
+            for (int i = 0, j = sentenceArray.Length - 1; i < sentenceArray.Length; i++, j--)
             {
 
                 reverseSentence.Append($"{sentenceArray[j]} ");
@@ -41,7 +41,7 @@ namespace interview_practice.topics
 
                 var tempStringBuilder = new StringBuilder();
 
-                for(int k = 0, l = tempString.Length-1; k < tempString.Length; k++, l--)
+                for (int k = 0, l = tempString.Length - 1; k < tempString.Length; k++, l--)
                 {
                     tempStringBuilder.Append(tempString[l]);
                 }

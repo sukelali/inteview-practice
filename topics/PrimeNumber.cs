@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace interview_practice.topics
+﻿namespace interview_practice.topics
 {
     public static class PrimeNumber
     {
@@ -39,6 +33,7 @@ namespace interview_practice.topics
 
 
             return isPrime ? "Prime" : "Not Prime";
+
         }
 
 
