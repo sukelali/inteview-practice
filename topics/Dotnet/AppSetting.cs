@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace interview_practice.topics.Dotnet
 {
-    public sealed class Singleton
+    public sealed class AppSetting
     {
 
-        private static Singleton _instance = null;
+        private static AppSetting _instance = null;
         
         private static readonly object threadLock = new object();
 
-        private Singleton() { }
+        private AppSetting() { }
 
-        public static Singleton GetInstance()
+        public static AppSetting GetInstance()
         {
 
             lock(threadLock)
@@ -24,7 +24,7 @@ namespace interview_practice.topics.Dotnet
                 {
                     Console.WriteLine("Initilize Successfully");
 
-                    _instance = new Singleton();
+                    _instance = new AppSetting();
                 }
                 else
                 {

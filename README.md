@@ -11,6 +11,10 @@
   - [Char Occurance Count](#char-occurance-count)
   - [Sub String](#sub-string)
 
+
+- [Dotnet](#star-dotnet)
+  - [Singleton](#what-is-singleton-design-pattern?)
+
 ##  :star: String
 A string is an object of type String whose value is text.
 
@@ -138,6 +142,57 @@ public static string GenerateSubString(string str)
 
 }
 ```
+
+##  :star:Dotnet
+**.NET** is a large collection of a bunch of different things really; including compilers, runtimes, programming languages and a bunch of different tools and technologies.
+
+It provides a lot of common functionality that can be tapped into rather than recreating it from scratch.
+
+**C#** is one language that can be used on .NET. It get compiled initially by Roslyn and can get additional compilation at runtime by RyuJIT. Other languages include F# and VB.NET, which can all be compiled and run against .NET runtimes
+
+
+### What is Singleton Design Pattern?
+**Singleton** is a creational design pattern, which ensures that only one instance of its class exists.
+
+```
+public sealed class AppSetting
+{
+    private static AppSetting _instance = null;
+    private static readonly object threadLock = new object();
+
+    private AppSetting() { }
+
+    public static AppSetting GetInstance()
+    {
+        lock(threadLock)
+        {
+            if (_instance == null)
+            {
+                Console.WriteLine("Initilize Successfully");
+
+                _instance = new AppSetting();
+            }
+            else
+            {
+                Console.WriteLine("Returning Previously created instance");
+            }
+            return _instance;
+        }
+    }
+}
+
+// We can instantiate AppSetting as shown below. Although two objects are created, both will contain the same value. 
+// var appSettingOne = AppSetting.GetInstance();  // Initilize Successfully
+// var appSettingTwo = AppSetting.GetInstance();  // Returning Previously created instance
+```
+
+
+
+
+
+
+
+
 
 
 

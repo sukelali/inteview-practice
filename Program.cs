@@ -10,6 +10,10 @@ Console.WriteLine("Interview");
 
 //DuplicateRemove.TakeInputAndRemoveDuplicate();
 
-StringOccurance.TakeInputAndCountOccurance();
+var appSettingOne = AppSetting.GetInstance();
+
+var appSettingTwo = AppSetting.GetInstance();
+
+//StringOccurance.TakeInputAndCountOccurance();
 
 
