@@ -13,7 +13,7 @@
 
 
 - [Dotnet](#star-dotnet)
-  - [Singleton](#what-is-singleton-design-pattern?)
+  - [Singleton](#what-is-singleton-design-pattern)
 
 ##  :star: String
 A string is an object of type String whose value is text.
@@ -143,7 +143,7 @@ public static string GenerateSubString(string str)
 }
 ```
 
-##  :star:Dotnet
+## :star: Dotnet
 **.NET** is a large collection of a bunch of different things really; including compilers, runtimes, programming languages and a bunch of different tools and technologies.
 
 It provides a lot of common functionality that can be tapped into rather than recreating it from scratch.
